@@ -31,21 +31,21 @@ const RandomQuote = () => {
 
 
   const [quote, setQuote] = useState({
-    text: "Be your own boss will you go ahed kjh kjhksiof kjhisd ",
-    author: "Akash Shivaji Patil ",
+    text: "Be your own boss....",
+    author: "Akash Patil ",
   });
 
   //Calling funtion loadQuotes
   loadQuotes();
-
+  // m-auto w-[800px]  mt-[250px]
   return (
-    <div className=" flex flex-col m-auto w-[800px] rounded-[20px] mt-[250px] items-center bg-[#121212] text-cyan-100 ">
-      <div className="p-[30px] text-[white] text-center text-[32px]">
+    <div className=" flex flex-col  items-center bg-[#121212] rounded-[20px] text-cyan-100 m-auto mt-[200px]  w-[80%] lg:w-[800px]">
+      <div className="p-[30px] text-[white] text-center text-[21px] lg:text-[32px]">
         {quote.text}
-      </div>
-      <div className="line w-[680px] h-[1.5px] bg-white"></div>
-      <div className=" flex flex-row gap-[300px] items-center mt-[30px] mb-[30px] ">
-        <div className="author text-[white] text-[20px] mr-9">- {quote.author.split(',')[0]}</div>
+        </div>
+      <div className="line w-[80%] h-[1.5px] bg-white"></div>
+      <div className="bottom flex flex-row gap-[40px] mt-[30px] mb-[30px] lg:gap-[300px]  ">
+        <div className="author text-[white] text-[14px] mr-9 italic lg:text-[17px]">- {quote.author.split(',')[0]}</div>
         <div className="icons flex gap-5">
             <div className="cursor-pointer" onClick={()=>{random()}}><CachedOutlinedIcon></CachedOutlinedIcon></div>
             <div className="cursor-pointer" onClick={()=>{share()}}><ShareIcon ></ShareIcon></div>
