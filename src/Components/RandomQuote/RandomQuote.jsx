@@ -44,7 +44,7 @@ const RandomQuote = () => {
         {quote.text}
         </div>
       <div className="line w-[80%] h-[1.5px] bg-white"></div>
-      <div className="bottom flex flex-row gap-[40px] mt-[30px] mb-[30px] lg:gap-[300px]  ">
+      <div className="bottom flex flex-row gap-[65px] mt-[20px] mb-[30px] lg:gap-[300px] mt-[30px]  ">
         <div className="author text-[white] text-[14px] mr-9 italic lg:text-[17px]">- {quote.author.split(',')[0]}</div>
         <div className="icons flex gap-5">
             <div className="cursor-pointer" onClick={()=>{random()}}><CachedOutlinedIcon></CachedOutlinedIcon></div>
