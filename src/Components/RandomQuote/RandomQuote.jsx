@@ -39,12 +39,12 @@ const RandomQuote = () => {
   loadQuotes();
   // m-auto w-[800px]  mt-[250px]
   return (
-    <div className=" flex flex-col  items-center bg-[#121212] rounded-[20px] text-cyan-100 m-auto mt-[200px]  w-[80%] lg:w-[800px]">
-      <div className="p-[30px] text-[white] text-center text-[21px] lg:text-[32px]">
+    <div className="container flex flex-col  items-center rounded-[20px] text-cyan-100 m-auto mt-[200px]  w-[80%]  lg:w-[800px]">
+      <div className="p-[20px] text-[white] text-center text-[21px] lg:text-[32px]">
         {quote.text}
         </div>
       <div className="line w-[80%] h-[1.5px] bg-white"></div>
-      <div className="bottom flex flex-row gap-[65px] mt-[20px] mb-[30px] lg:gap-[300px] mt-[30px]  ">
+      <div className="bottom flex flex-row gap-[65px] mt-[10px] mb-[15px] lg:gap-[300px] mt-[30px]  ">
         <div className="author text-[white] text-[14px] mr-9 italic lg:text-[17px]">- {quote.author.split(',')[0]}</div>
         <div className="icons flex gap-5">
             <div className="cursor-pointer" onClick={()=>{random()}}><CachedOutlinedIcon></CachedOutlinedIcon></div>

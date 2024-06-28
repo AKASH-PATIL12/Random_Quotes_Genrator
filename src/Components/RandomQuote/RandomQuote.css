@@ -1,0 +1,6 @@
+.container {
+  border-radius: 15px;
+  box-shadow:inset 4px 4px 170px #827fbc52, -10px -10px 45px #c766aa;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
