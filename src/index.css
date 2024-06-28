@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  background-image: url('E:\PROJECT\random_quotes\src\Components\Assets\back.jpg');
+  background-image: url('./Components/Assets/back.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 /* 
